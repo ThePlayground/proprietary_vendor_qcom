@@ -29,6 +29,18 @@ PRODUCT_COPY_FILES += \
     vendor/qcom/system/caf/libmmparser_divxdrmlib.so:system/lib/libmmparser_divxdrmlib.so \
     vendor/qcom/system/caf/libqc-opt.so:system/lib/libqc-opt.so
 
+# Prebuilt libraries for CAF Chromium plug-ins
+PRODUCT_COPY_FILES += \
+    vendor/qcom/system/caf/libcneapiclient.so:/system/lib/libcneapiclient.so \
+    vendor/qcom/system/caf/libcneqmiutils.so:/system/lib/libcneqmiutils.so \
+    vendor/qcom/system/caf/libdiag.so:/system/lib/libdiag.so \
+    vendor/qcom/system/caf/libdnshostprio.so:/system/lib/libdnshostprio.so \
+    vendor/qcom/system/caf/libnetmonitor.so:/system/lib/libnetmonitor.so \
+    vendor/qcom/system/caf/libtcpfinaggr.so:/system/lib/libtcpfinaggr.so \
+    vendor/qcom/system/caf/pp_proc_plugin.so:/system/lib/pp_proc_plugin.so \
+    vendor/qcom/system/caf/qnet-plugin.so:/system/lib/qnet-plugin.so \
+    vendor/qcom/system/caf/tcp-connections.so:/system/lib/tcp-connections.so
+
 # Prebuilt Adreno 2xx libraries
 PRODUCT_COPY_FILES += \
     vendor/qcom/system/etc/firmware/a225_pfp.fw:/system/etc/firmware/a225_pfp.fw \
