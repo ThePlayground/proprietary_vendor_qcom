@@ -12,6 +12,10 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+# Vendor extension library
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.vendor.extension_library=/system/lib/libqc-opt.so
+
 # Prebuilt shared libraries
 PRODUCT_COPY_FILES += \
     vendor/qcom/system/caf/libv8.so:obj/lib/libv8.so
@@ -22,7 +26,8 @@ PRODUCT_COPY_FILES += \
     vendor/qcom/system/caf/libmm-color-convertor.so:system/lib/libmm-color-convertor.so \
     vendor/qcom/system/caf/libmmosal.so:system/lib/libmmosal.so \
     vendor/qcom/system/caf/libmmparser.so:system/lib/libmmparser.so \
-    vendor/qcom/system/caf/libmmparser_divxdrmlib.so:system/lib/libmmparser_divxdrmlib.so
+    vendor/qcom/system/caf/libmmparser_divxdrmlib.so:system/lib/libmmparser_divxdrmlib.so \
+    vendor/qcom/system/caf/libqc-opt.so:system/lib/libqc-opt.so
 
 # Prebuilt Adreno 2xx libraries
 PRODUCT_COPY_FILES += \
